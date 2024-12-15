@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "my-icp-todo-backend": {
+      "main": "src/my-icp-todo-backend/main.mo",
+      "type": "motoko"
+    },
+    "my-icp-todo-frontend": {
+      "dependencies": [
+        "my-icp-todo-backend"
+      ],
+      "source": [
+        "src/my-icp-todo-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my-icp-todo-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
